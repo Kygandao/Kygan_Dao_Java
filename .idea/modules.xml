@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Dao-Kygan/CalculatorObject/CalculatorObject.iml" filepath="$PROJECT_DIR$/M1-Challenge-Dao-Kygan/CalculatorObject/CalculatorObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Dao-Kygan/ConverterInterface/ConverterInterface.iml" filepath="$PROJECT_DIR$/M1-Challenge-Dao-Kygan/ConverterInterface/ConverterInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Dao-Kygan/CustomerComposition/CustomerComposition.iml" filepath="$PROJECT_DIR$/M1-Challenge-Dao-Kygan/CustomerComposition/CustomerComposition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Dao-Kygan/IceCreamClassDesign/IceCreamClassDesign.iml" filepath="$PROJECT_DIR$/M1-Challenge-Dao-Kygan/IceCreamClassDesign/IceCreamClassDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Kygan_Dao_Java.iml" filepath="$PROJECT_DIR$/.idea/Kygan_Dao_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Dao-Kygan/RPGInheritance/RPGInheritance.iml" filepath="$PROJECT_DIR$/M1-Challenge-Dao-Kygan/RPGInheritance/RPGInheritance.iml" />
+    </modules>
+  </component>
+</project>

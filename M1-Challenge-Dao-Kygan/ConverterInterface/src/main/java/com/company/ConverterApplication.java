@@ -1,9 +1,8 @@
 package com.company;
 
-public class ConverterApplication {
-    public static void main(String[] args) {
+import com.company.interfaces.Converter;
 
-        
+public class ConverterApplication implements Converter {
 
-    }
+
 }
