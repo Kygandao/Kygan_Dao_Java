@@ -16,7 +16,11 @@ public class IceCream {
         this.ingredients = ingredients;
     }
 
+    public IceCream() {
 
+    }
+
+    //Getters
         public String getFlavor () {
             return flavor;
         }
@@ -37,6 +41,7 @@ public class IceCream {
             return ingredients;
         }
 
+        //Setters
         public void setFlavor (String flavor){
             this.flavor = flavor;
         }

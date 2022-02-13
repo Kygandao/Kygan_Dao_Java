@@ -1,23 +1,29 @@
 package com.company.pointOfSale;
 
+import java.util.Objects;
+
 public class IceCream {
 
     private String flavor;
-    private double price;
+    private int price;
     private int quantity;
 
-    public IceCream(String flavor, double price, int quantity) {
+    public IceCream(String flavor, int price, int quantity) {
         this.flavor = flavor;
         this.price = price;
         this.quantity = quantity;
     }
 
+    public IceCream() {
 
+    }
+
+    //Getters
     public String getFlavor () {
         return flavor;
     }
 
-    public double getPrice () {
+    public int getPrice () {
         return price;
     }
 
@@ -25,11 +31,12 @@ public class IceCream {
         return quantity;
     }
 
+    //Setters
     public void setFlavor (String flavor){
         this.flavor = flavor;
     }
 
-    public void setPrice ( double price){
+    public void setPrice ( int price){
         this.price = price;
     }
 
@@ -38,4 +45,18 @@ public class IceCream {
     }
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        IceCream posIceCream = (IceCream) o;
+        return getQuantity() == posIceCream.getQuantity() &&
+                Objects.equals(getFlavor(), posIceCream.getFlavor()) &&
+                getPrice() == posIceCream.getPrice();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFlavor(), getPrice(), getQuantity());
+    }
 }

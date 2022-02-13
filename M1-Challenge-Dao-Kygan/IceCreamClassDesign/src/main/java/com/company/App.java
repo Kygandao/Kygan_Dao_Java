@@ -18,7 +18,7 @@ public class App {
         );
 
         //create and display new ice cream from the point of sale
-        com.company.pointOfSale.IceCream pointOfSaleIceCream = new com.company.pointOfSale.IceCream("Chocolate", 6.7, 2);
+        com.company.pointOfSale.IceCream pointOfSaleIceCream = new com.company.pointOfSale.IceCream("Chocolate", 6, 2);
 
         System.out.println("Flavor : " + pointOfSaleIceCream.getFlavor() + "\n" +
                 "Price : " + pointOfSaleIceCream.getPrice() + "\n" +
