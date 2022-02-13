@@ -5,34 +5,62 @@ import com.company.Villager;
 public class Warrior extends Villager {
 
     //initial property values
-    protected int strength = 75;
-    protected int stamina = 100;
-    protected int speed = 50;
-    protected int attackPower = 10;
+    public int strength = 75;
+    private int stamina = 100;
+    private int speed = 50;
+    private int attackPower = 10;
 
     //initial warrior unique property
-    protected int shieldStrength = 100;
+    private int shieldStrength = 100;
 
-    //warrior unique property
-    public int getShieldStrength() {
-        return shieldStrength;
-    }
 
-    //get
+    //getters & setters
+    @Override
     public int getStrength() {
         return strength;
     }
 
+    @Override
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    @Override
     public int getStamina() {
         return stamina;
     }
 
+    @Override
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
+    }
+
+    @Override
     public int getSpeed() {
         return speed;
     }
 
+    @Override
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    @Override
     public int getAttackPower() {
         return attackPower;
+    }
+
+    @Override
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public int getShieldStrength() {
+        return shieldStrength;
+    }
+
+    public void setShieldStrength(int shieldStrength) {
+        this.shieldStrength = shieldStrength;
     }
 
     //abilities

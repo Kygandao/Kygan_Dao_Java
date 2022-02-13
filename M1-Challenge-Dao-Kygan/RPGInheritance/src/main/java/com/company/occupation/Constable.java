@@ -5,40 +5,63 @@ import com.company.Villager;
 public class Constable extends Villager {
 
     //initial property values
-    protected int strength = 60;
-    protected int stamina = 60;
-    protected int speed = 20;
-    protected int attackPower = 5;
+    private int strength = 60;
+    private int stamina = 60;
+    private int speed = 20;
+    private int attackPower = 5;
 
     //constable unique property
-    protected boolean jurisdiction = false;
+    private boolean jurisdiction = false;
 
-    //get & set constable unique property of JURISDICTION
-//    public void setJurisdiction(boolean jurisdiction) {
-//        this.jurisdiction = jurisdiction;
-//    }
 
-    public boolean getJurisdiction() {
-        return jurisdiction;
-    }
-
-    //get
+    //getters & setters
+    @Override
     public int getStrength() {
         return strength;
     }
 
+    @Override
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    @Override
     public int getStamina() {
         return stamina;
     }
 
+    @Override
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
+    }
+
+    @Override
     public int getSpeed() {
         return speed;
     }
 
+    @Override
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    @Override
     public int getAttackPower() {
         return attackPower;
     }
 
+    @Override
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
+    }
+
+    public boolean isJurisdiction() {
+        return jurisdiction;
+    }
+
+    public void setJurisdiction(boolean jurisdiction) {
+        this.jurisdiction = jurisdiction;
+    }
 
     //abilities
     @Override
