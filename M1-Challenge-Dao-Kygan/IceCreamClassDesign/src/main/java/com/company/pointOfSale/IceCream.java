@@ -46,15 +46,13 @@ public class IceCream {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        IceCream posIceCream = (IceCream) o;
-        return getQuantity() == posIceCream.getQuantity() &&
-                Objects.equals(getFlavor(), posIceCream.getFlavor()) &&
-                getPrice() == posIceCream.getPrice();
+        IceCream iceCream = (IceCream) o;
+        return price == iceCream.price && quantity == iceCream.quantity && Objects.equals(flavor, iceCream.flavor);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getFlavor(), getPrice(), getQuantity());
+        return Objects.hash(flavor, price, quantity);
     }
 
     @Override
