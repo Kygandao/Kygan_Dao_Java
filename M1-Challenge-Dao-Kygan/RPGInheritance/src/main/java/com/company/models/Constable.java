@@ -1,4 +1,4 @@
-package com.company.occupation;
+package com.company.models;
 
 import com.company.Villager;
 
