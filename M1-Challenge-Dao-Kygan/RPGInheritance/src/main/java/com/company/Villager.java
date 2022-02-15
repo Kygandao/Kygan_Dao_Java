@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Villager {
+public class Villager {
 
     //common properties
     private String name;
@@ -86,7 +86,7 @@ public abstract class Villager {
 
     //villager abilities
     public void attackAnotherCharacter() {
-        System.out.println("Attacking Another Character from Villager Class!!!");
+        System.out.println("The Villager Character Attacks!!!");
     }
 
 
