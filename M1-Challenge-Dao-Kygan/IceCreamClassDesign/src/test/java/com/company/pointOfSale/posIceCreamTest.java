@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class IceCreamTest {
+public class posIceCreamTest {
 
     @Before
     public void setUp() throws Exception {
@@ -14,13 +14,13 @@ public class IceCreamTest {
     @Test
     public void shouldSayIceCreamIsEqual() {
 
-        IceCream posIceCream = new IceCream();
+        com.company.pointOfSale.IceCream posIceCream = new com.company.pointOfSale.IceCream();
         posIceCream.setFlavor("Chocolate");
         posIceCream.setPrice(5);
         posIceCream.setQuantity(2);
         System.out.println(posIceCream);
 
-        IceCream posIceCream2 = new IceCream();
+        com.company.pointOfSale.IceCream posIceCream2 = new com.company.pointOfSale.IceCream();
         posIceCream.setFlavor("Chocolate");
         posIceCream.setPrice(5);
         posIceCream.setQuantity(2);

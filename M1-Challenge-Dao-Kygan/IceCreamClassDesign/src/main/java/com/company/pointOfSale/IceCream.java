@@ -18,32 +18,29 @@ public class IceCream {
 
     }
 
-    //Getters
-    public String getFlavor () {
+    public String getFlavor() {
         return flavor;
     }
 
-    public int getPrice () {
-        return price;
-    }
-
-    public int getQuantity () {
-        return quantity;
-    }
-
-    //Setters
-    public void setFlavor (String flavor){
+    public void setFlavor(String flavor) {
         this.flavor = flavor;
     }
 
-    public void setPrice ( int price){
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
         this.price = price;
     }
 
-    public void setQuantity ( int quantity){
-        this.quantity = quantity;
+    public int getQuantity() {
+        return quantity;
     }
 
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -58,5 +55,14 @@ public class IceCream {
     @Override
     public int hashCode() {
         return Objects.hash(getFlavor(), getPrice(), getQuantity());
+    }
+
+    @Override
+    public String toString() {
+        return "IceCream{" +
+                "flavor='" + flavor + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                '}';
     }
 }

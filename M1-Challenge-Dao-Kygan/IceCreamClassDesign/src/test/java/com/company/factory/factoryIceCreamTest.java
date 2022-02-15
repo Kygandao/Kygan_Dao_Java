@@ -1,12 +1,11 @@
 package com.company.factory;
 
-import com.company.pointOfSale.IceCream;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class IceCreamTest {
+public class factoryIceCreamTest {
 
     @Before
     public void setUp() throws Exception {
