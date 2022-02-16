@@ -20,8 +20,8 @@ public class App {
         System.out.println(villager.getName() + " Stamina : " + villager.getStamina());
         System.out.println(villager.getName() + " Speed : " + villager.getSpeed());
         System.out.println(villager.getName() + " Attack Power : " + villager.getAttackPower());
-        System.out.println(villager.getName() + " Is Running? : " + villager.isRunning());
-        System.out.println(villager.getName() + " Is Arrested? : " + villager.isArrested());
+        System.out.println(villager.getName() + " Is Running? : " + villager.isRunning(false));
+        System.out.println(villager.getName() + " Is Arrested? : " + villager.isArrested(false));
         villager.attackAnotherCharacter();
 
         //FARMER CREATION
@@ -35,8 +35,8 @@ public class App {
         System.out.println(farmer.getName() + " Attack Power : " + farmer.getAttackPower());
         System.out.println(farmer.getName() + " Is Plowing : " + farmer.isPlowing());
         System.out.println(farmer.getName() + " Is Harvesting : " + farmer.isHarvesting());
-        System.out.println(farmer.getName() + " Is Running? : " + farmer.isRunning());
-        System.out.println(farmer.getName() + " Is Arrested? : " + farmer.isArrested());
+        System.out.println(farmer.getName() + " Is Running? : " + farmer.isRunning(false));
+        System.out.println(farmer.getName() + " Is Arrested? : " + farmer.isArrested(false));
         farmer.attackAnotherCharacter();
 
         //CONSTABLE CREATION
@@ -49,8 +49,8 @@ public class App {
         System.out.println(constable.getName() + " Speed : " + constable.getSpeed());
         System.out.println(constable.getName() + " Attack Power : " + constable.getAttackPower());
         System.out.println("Does " + constable.getName() + " Have Jurisdiction? : " + constable.isJurisdiction());
-        System.out.println(constable.getName() + " Is Running? : " + constable.isRunning());
-        System.out.println(constable.getName() + " Is Arrested? : " + constable.isArrested());
+        System.out.println(constable.getName() + " Is Running? : " + constable.isRunning(false));
+        System.out.println(constable.getName() + " Is Arrested? : " + constable.isArrested(false));
         constable.attackAnotherCharacter();
         constable.arrestAnotherCharacter();
 
@@ -64,8 +64,8 @@ public class App {
         System.out.println(warrior.getName() + " Speed : " + warrior.getSpeed());
         System.out.println(warrior.getName() + " Attack Power : " + warrior.getAttackPower());
         System.out.println(warrior.getName() + " Shield Strength : " + warrior.getShieldStrength());
-        System.out.println(warrior.getName() + " Is Running? : " + warrior.isRunning());
-        System.out.println(warrior.getName() + " Is Arrested? : " + warrior.isArrested());
+        System.out.println(warrior.getName() + " Is Running? : " + warrior.isRunning(false));
+        System.out.println(warrior.getName() + " Is Arrested? : " + warrior.isArrested(false));
         warrior.attackAnotherCharacter();
 
 

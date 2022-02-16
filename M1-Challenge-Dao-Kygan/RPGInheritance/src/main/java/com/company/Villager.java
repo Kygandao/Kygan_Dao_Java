@@ -69,7 +69,7 @@ public class Villager {
         this.health = health;
     }
 
-    public boolean isRunning() {
+    public boolean isRunning(boolean b) {
         return running;
     }
 
@@ -77,7 +77,7 @@ public class Villager {
         this.running = running;
     }
 
-    public boolean isArrested() {
+    public boolean isArrested(boolean b) {
         return arrested;
     }
 
