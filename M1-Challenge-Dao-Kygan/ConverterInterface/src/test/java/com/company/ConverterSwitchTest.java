@@ -18,20 +18,22 @@ public class ConverterSwitchTest {
     //TEST MONTH CONVERSION
     @Test
     public void shouldReturnMonthAsString() {
+        String failMsg = "Expected to convert month number to month string";
 
-        assertEquals("December", converter.convertMonth(12));
-        assertEquals("January", converter.convertMonth(1));
-        assertEquals("June", converter.convertMonth(6));
+        assertEquals(failMsg,"December", converter.convertMonth(12));
+        assertEquals(failMsg,"January", converter.convertMonth(1));
+        assertEquals(failMsg,"June", converter.convertMonth(6));
 
     }
 
     //TEST DAY CONVERSION
     @Test
     public void shouldReturnDayAsString() {
+        String failMsg = "Expected to convert day number to day string";
 
-        assertEquals("Sunday", converter.convertDay(1));
-        assertEquals("Monday", converter.convertDay(2));
-        assertEquals("Friday", converter.convertDay(6));
+        assertEquals(failMsg,"Sunday", converter.convertDay(1));
+        assertEquals(failMsg,"Monday", converter.convertDay(2));
+        assertEquals(failMsg,"Friday", converter.convertDay(6));
 
     }
 }
