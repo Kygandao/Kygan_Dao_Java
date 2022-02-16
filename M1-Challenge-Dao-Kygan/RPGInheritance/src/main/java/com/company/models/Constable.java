@@ -2,6 +2,8 @@ package com.company.models;
 
 import com.company.Villager;
 
+import java.util.Objects;
+
 public class Constable extends Villager {
 
     //initial property values
@@ -72,5 +74,29 @@ public class Constable extends Villager {
     //constable unique ability
     public void arrestAnotherCharacter() {
         System.out.println("The Constable Class Arrests Another Character!!!");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Constable constable = (Constable) o;
+        return strength == constable.strength && stamina == constable.stamina && speed == constable.speed && attackPower == constable.attackPower && jurisdiction == constable.jurisdiction;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(strength, stamina, speed, attackPower, jurisdiction);
+    }
+
+    @Override
+    public String toString() {
+        return "Constable{" +
+                "strength=" + strength +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", jurisdiction=" + jurisdiction +
+                '}';
     }
 }

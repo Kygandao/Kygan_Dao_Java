@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Villager {
 
     //common properties
@@ -89,5 +91,31 @@ public class Villager {
         System.out.println("The Villager Character Attacks!!!");
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Villager villager = (Villager) o;
+        return strength == villager.strength && stamina == villager.stamina && speed == villager.speed && attackPower == villager.attackPower && health == villager.health && running == villager.running && arrested == villager.arrested && Objects.equals(name, villager.name) && Objects.equals(attackAnotherCharacter, villager.attackAnotherCharacter);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, strength, stamina, speed, attackPower, health, running, arrested, attackAnotherCharacter);
+    }
+
+    @Override
+    public String toString() {
+        return "Villager{" +
+                "name='" + name + '\'' +
+                ", strength=" + strength +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", health=" + health +
+                ", running=" + running +
+                ", arrested=" + arrested +
+                ", attackAnotherCharacter='" + attackAnotherCharacter + '\'' +
+                '}';
+    }
 }

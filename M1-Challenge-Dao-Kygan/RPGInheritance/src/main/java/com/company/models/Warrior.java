@@ -2,6 +2,8 @@ package com.company.models;
 
 import com.company.Villager;
 
+import java.util.Objects;
+
 public class Warrior extends Villager {
 
     //initial property values
@@ -67,5 +69,29 @@ public class Warrior extends Villager {
     @Override
     public void attackAnotherCharacter() {
         System.out.println("The Warrior Class Character Attacks!!!");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Warrior warrior = (Warrior) o;
+        return strength == warrior.strength && stamina == warrior.stamina && speed == warrior.speed && attackPower == warrior.attackPower && shieldStrength == warrior.shieldStrength;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(strength, stamina, speed, attackPower, shieldStrength);
+    }
+
+    @Override
+    public String toString() {
+        return "Warrior{" +
+                "strength=" + strength +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", shieldStrength=" + shieldStrength +
+                '}';
     }
 }
